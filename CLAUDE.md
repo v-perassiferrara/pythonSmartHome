@@ -1,4 +1,4 @@
-# CLAUDE_iot.md - Guía Técnica Completa para IA
+# CLAUDE.md - Guía Técnica Completa para IA
 
 **Proyecto**: PythonSmartHome
 **Versión**: 1.0.0
