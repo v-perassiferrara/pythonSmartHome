@@ -27,8 +27,8 @@ class LuzInteligenteService(DispositivoService):
         Args:
             luz: Luz a mostrar
         """
-        super().mostrar_datos(luz)  # Datos comunes (ID, estado)
-        print(f"Intensidad: {luz.get_intensidad()}% ")
+        super().mostrar_datos(luz)  # Datos comunes (ID, estado, tipo)
+        print(f"Intensidad: {luz.get_intensidad()}%")
         r, g, b = luz.get_color_rgb()
         print(f"Color RGB: ({r}, {g}, {b})")
 

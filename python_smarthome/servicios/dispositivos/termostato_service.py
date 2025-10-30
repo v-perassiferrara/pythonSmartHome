@@ -27,7 +27,7 @@ class TermostatoService(DispositivoService):
         Args:
             termostato: Termostato a mostrar
         """
-        super().mostrar_datos(termostato)
+        super().mostrar_datos(termostato)  # Datos comunes (ID, estado, tipo)
         print(f"Temperatura Objetivo: {termostato.get_temperatura_objetivo()}°C")
 
     def encender(self, termostato: 'Termostato') -> None:

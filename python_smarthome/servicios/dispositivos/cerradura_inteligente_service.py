@@ -27,7 +27,7 @@ class CerraduraInteligenteService(DispositivoService):
         Args:
             cerradura: Cerradura a mostrar
         """
-        super().mostrar_datos(cerradura)
+        super().mostrar_datos(cerradura)  # Datos comunes (ID, estado, tipo)
         print(f"Batería: {cerradura.get_bateria()}%")
         print(f"Estado: {'bloqueada' if cerradura.is_bloqueada() else 'desbloqueada'}")
 

@@ -27,7 +27,7 @@ class CamaraSeguridadService(DispositivoService):
         Args:
             camara: Cámara a mostrar
         """
-        super().mostrar_datos(camara)
+        super().mostrar_datos(camara)  # Datos comunes (ID, estado, tipo)
         print(f"Resolución: {camara.get_resolucion()}")
         print(f"Detección de Movimiento: {'activa' if camara.is_deteccion_movimiento_activa() else 'inactiva'}")
         print(f"Grabando: {'sí' if camara.is_grabando() else 'no'}")
